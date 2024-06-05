@@ -7,7 +7,7 @@ local lspconfig = require "lspconfig"
 local servers = {
 	"html",
 	"cssls",
-  "pyright",
+	"pyright",
 	"tailwindcss",
 	"intelephense",
 	"tsserver",
@@ -49,7 +49,11 @@ lspconfig.tsserver.setup {
 }
 
 lspconfig.intelephense.setup {
-  cmd = { "intelephense", "--stdio" },
-  filetypes = { "php" },
-  root_pattern = { 'composer.json', '.git' },
+	cmd = { "intelephense", "--stdio" },
+	filetypes = { "php" },
+	root_pattern = { "composer.json", ".git" },
+}
+
+lspconfig.elixirls.setup {
+	cmd = { "/Users/livghit/.local/share/nvim/mason/packages/elixir-ls/language_server.sh" },
 }
