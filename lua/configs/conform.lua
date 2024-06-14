@@ -7,6 +7,7 @@ local options = {
      javascriptreact = { "prettier" },
      vue = { "prettier" },
      php = { "pint" },
+     ruby = { "rubyfmt" },
   },
 
   -- format_on_save = {

@@ -10,6 +10,7 @@ local servers = {
 	"pyright",
 	"tailwindcss",
 	"intelephense",
+	"ruby_lsp",
 	"tsserver",
 }
 
