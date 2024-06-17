@@ -49,12 +49,13 @@ lspconfig.tsserver.setup {
 	},
 }
 
+-- php lsp
 lspconfig.intelephense.setup {
 	cmd = { "intelephense", "--stdio" },
 	filetypes = { "php" },
 	root_pattern = { "composer.json", ".git" },
 }
-
+-- Elixir lsp
 lspconfig.elixirls.setup {
 	cmd = { "/Users/livghit/.local/share/nvim/mason/packages/elixir-ls/language_server.sh" },
 }
