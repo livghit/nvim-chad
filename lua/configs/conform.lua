@@ -8,8 +8,8 @@ local options = {
 		vue = { "prettier" },
 		php = { "pint" },
 		ruby = { "rubyfmt" },
-    -- not working needs fix  |>
-		erb = { "erb-formatter" },
+		eruby = { "erb_format" },
+		-- not working needs fix  |>
 	},
 
 	-- format_on_save = {

@@ -12,6 +12,8 @@ local servers = {
 	"intelephense",
 	"ruby_lsp",
 	"tsserver",
+	"gopls",
+	"ruby_lsp",
 }
 
 local vue_typescript_plugin = "/Users/livghit/.nvm/versions/node/v18.16.0"
