@@ -5,7 +5,7 @@
 local M = {}
 
 M.ui = {
-	theme = "solarized_osaka",
+	theme = "bearded-arc",
   transparency = true;
 
 	-- hl_override = {

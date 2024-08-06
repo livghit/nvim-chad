@@ -10,10 +10,8 @@ local servers = {
 	"pyright",
 	"tailwindcss",
 	"intelephense",
-	"ruby_lsp",
 	"tsserver",
 	"gopls",
-	"ruby_lsp",
 }
 
 local vue_typescript_plugin = "/Users/livghit/.nvm/versions/node/v18.16.0"
@@ -60,4 +58,9 @@ lspconfig.intelephense.setup {
 -- Elixir lsp
 lspconfig.elixirls.setup {
 	cmd = { "/Users/livghit/.local/share/nvim/mason/packages/elixir-ls/language_server.sh" },
+}
+
+lspconfig.solargraph.setup{
+  filetypes = {"ruby"},
+  root_pattern = {"Gemfile", ".git", "Rakefile", ".solargraph.yml"}
 }
