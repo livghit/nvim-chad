@@ -5,7 +5,6 @@ local capabilities = require("nvchad.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
 local servers = {
-	"html",
 	"cssls",
 	"pyright",
 	"tailwindcss",
@@ -27,6 +26,17 @@ for _, lsp in ipairs(servers) do
 		capabilities = capabilities,
 	}
 end
+
+
+lspconfig.html.setup{
+  on_attach = on_attach,
+  on_init = on_init,
+  capabilities = capabilities,
+  filetypes= {
+    "html",
+    "blade"
+  }
+}
 
 -- typescript
 lspconfig.tsserver.setup {
